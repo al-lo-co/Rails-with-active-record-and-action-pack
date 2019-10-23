@@ -1,0 +1,14 @@
+<%= form_for([@book, @book.notes.new]) do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :note %>
+    <%= f.text_area :note %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Add new note" %>
+  </div>
+<%end%>
